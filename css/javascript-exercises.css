@@ -1,68 +1,72 @@
 * {
-    font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS";
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 header {
-    padding: 15px;
-    border-bottom: solid 1px #000;
+  padding: 15px;
+  border-bottom: solid 1px #000;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
 }
 
 section:first-child {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    border-right: solid 1px #333;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  border-right: solid 1px #333;
 }
 
 section:last-child {
-    grid-column-start: 9;
-    grid-column-end: 13;
+  grid-column-start: 9;
+  grid-column-end: 13;
 }
 
 section {
-    padding: 15px;
+  padding: 15px;
 }
 
 button {
-    padding: 8px;
-    border-radius: 3px;
+  padding: 8px;
+  border-radius: 3px;
 }
 
 footer {
-    padding: 15px;
-    border-top: solid 1px #000;
+  padding: 15px;
+  border-top: solid 1px #000;
 }
 
 #btnpanel div {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .example {
-    background-color: #fcc;
+  background-color: #fcc;
 }
 
 /* */
 .tx-color-red {
-    transition: color 1s;
-    color: #f00;
+  transition: color 1s;
+  color: #f00;
 }
 
 .transform {
-    transition: transform 2s;
-    transform: rotate(360deg);
+  transition: transform 2s;
+  transform: rotate(360deg);
 }
 
 .tx-big {
-    font-size: 18pt;
+  font-size: 18pt;
+}
+
+.flyin {
+  animation: flyin 0.5s ease-out forwards;
 }
